@@ -16,6 +16,11 @@ namespace ToDoList
       Configuration = builder.Build();
     }
 
+    public static class DBConfiguration
+  {
+    public static string ConnectionString = "server=localhost;user id=root;password=root;port=8889;database=to_do_list;";
+  }
+
     public IConfigurationRoot Configuration { get; }
 
     public void ConfigureServices(IServiceCollection services)
